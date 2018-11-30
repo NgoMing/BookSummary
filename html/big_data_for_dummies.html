@@ -154,15 +154,17 @@
 							<p>Open APIs are will be core to any big data architecture</p>
 							<p>Interfaces exist at every level and between every layer of stack</p>
 							<ul>
-								<li>Redundant physical infrastructure</li>
-								<p>Fundamental to the operation and scalability of a big data architecture</p>
-								<p>Support an unanticipated volume of data => Distributed File System</p>
-								<p>Redundance is important because the requirement of processing different sources (SaaS)</p>
+								<li>Redundant physical infrastructure
+									<p>Fundamental to the operation and scalability of a big data architecture</p>
+									<p>Support an unanticipated volume of data => Distributed File System</p>
+									<p>Redundance is important because the requirement of processing different sources (SaaS)</p>
+								</li>
 
 								<li>Security infrastructure</li>
-								<li>Operational data sources</li>
-								<p>Encompass a broader set of data sources: structured data (transactions) and unstructured data (customer and social media data)</p>
-								<p>Emerging approaches to data management: document, graph, columnar and geospatial database architecture, referred to NoSQL database</p>
+								<li>Operational data sources
+									<p>Encompass a broader set of data sources: structured data (transactions) and unstructured data (customer and social media data)</p>
+									<p>Emerging approaches to data management: document, graph, columnar and geospatial database architecture, referred to NoSQL database</p>
+								</li>
 							</ul>
 						</li>
 					</ul>
@@ -178,20 +180,23 @@
 						<li>Parallel processing</li>
 						<li>Distributed File System</li>
 						<li>In-memory database</li>
-						<li>MapReduce</li>
-						<p>Designed by Google
-						<p>Way of efficiently executing a set of functions against a large amount of data in batch mode</p>
-						<p>Map component: distribute tasks across a large number of systems and handle the placement of the tasks to satisfy load balancing and fail-over</p>
-						<p>Reduce component: aggregate all the elements back together to provide a result</p>
+						<li>MapReduce
+							<p>Designed by Google
+							<p>Way of efficiently executing a set of functions against a large amount of data in batch mode</p>
+							<p>Map component: distribute tasks across a large number of systems and handle the placement of the tasks to satisfy load balancing and fail-over</p>
+							<p>Reduce component: aggregate all the elements back together to provide a result</p>
+						</li>
 
-						<li>Big Table</li>
-						<p>Developed by Google</p>
-						<p>A distributed storage system used to manage highly scalable structured data</p>
-						<p>Includes columns, rows and timestamp</p>
+						<li>Big Table
+							<p>Developed by Google</p>
+							<p>A distributed storage system used to manage highly scalable structured data</p>
+							<p>Includes columns, rows and timestamp</p>
+						</li>
 
-						<li>Hadoop</li>
-						<p>An Apache managed software framework derived from MapReduce and Big Table</p>
-						<p>Two main components: a massively scalable distributed file system and a massively scalable MapReduce engine that computes results in batch</p>
+						<li>Hadoop
+							<p>An Apache managed software framework derived from MapReduce and Big Table</p>
+							<p>Two main components: a massively scalable distributed file system and a massively scalable MapReduce engine that computes results in batch</p>
+						</li>
 					</ul>
 				</section>
 				<!-- End of Techonology -->
@@ -217,6 +222,38 @@
 				<!-- Definitions -->
 				<section class="definition">
 					<h4>Definition</h4>
+					<ul>
+						<!-- Structured data -->
+						<li>Structured data
+							<ul>
+								<li>Data that has a defined length and format</li>
+								<li>Stored in database</li>
+								<li>Query using a language such as SQL</li>
+								<li>Collect from traditional sources such as CRM (Customer Relationship Management), ERP (Operational Enterprise Resource Planning) data, and finance data</li>
+							</ul>
+						</li>
+						<!-- End of Structured data -->
+
+						<!-- Unstructured data -->
+						<li>Unstructured data
+							<ul>
+								<li>Data that does not follow a specified format</li>
+							</ul>
+						</li>
+						<!-- End of Unstructured data -->
+
+						<!-- Real-time requirement -->
+						<li>Real-time requirement
+							<ul>
+								<li>Low latency: amount of time lag that enables a service to execute in anenvironment</li>
+								<li>Scalability: capability to sustain a certain level of performance even under increasing loads</li>
+								<li>Versatility: support both structured and unstructured data streams</li>
+								<li>Native format: use the data in its native form because transformation takes time and money</li>
+							</ul>
+						</li>
+						<!-- End of Real-time requirement -->
+
+					</ul>
 				</section>
 				<!-- End of Definitions -->
 
@@ -228,17 +265,46 @@
 				</section>
 				<!-- End of Problems-Solutions -->
 
-				<!-- Architecture -->
-				<section class="architecture">
-					<h4>Architecture</h4>
+				<!-- Data Model -->
+				<section class="data-model">
+					<h4>Data Model</h4>
+					<ul>
+						<!-- Relational Model -->
+						<li>Relational model
+							<ul>
+								<li>Data is stored in a table</li>
+								<li>Contains schema that is structural presentation of what is in the database
+									<p>Define table</p>
+									<p>Define fields in the table: name, types, constraints</p>
+									<p>Define relationships between tables</p>
+								</li>
+							</ul>
+						</li>
+						<!-- End of Relational model -->
+					</ul>
 				</section>
-				<!-- End of Architecture -->
+				<!-- End of Data Model -->
 
-				<!-- Technology -->
-				<section class="technology">
-					<h4>Technology fundamental</h4>
+				<!-- Data Management System -->
+				<section class="data-management-system">
+					<h4>Data Management System</h4>
+					<ul>
+						<!-- Relational Database Management System -->
+						<li>Relational Database Management System (RDBMS)
+							<p>Difficult to master</p>
+							<p>Require system programmers to write custom programs to manipulate the data</p>
+						</li>
+						<!-- End of Relational Database Management System -->
+
+						<li>Contetnt Management Systems
+							<p>Manage complete life cycle of content (web content, document content, other forms media</p>
+							<p>Technologies in Enterprise Content Management (EMC) are document management, records management, imaging, workflow management, web content management and collaboration</p>
+						</li>
+
+					</ul>
 				</section>
-				<!-- End of Techonology -->
+				<!-- End of Data Management System -->
+
 			</article>
 			<!-- End of Chapter -->
 			
