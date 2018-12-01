@@ -362,6 +362,198 @@
 		</article>
 		<!-- End of Part I Content -->
 
+		<!-- ------------------------------------------------------------------------- -->
+
+		<!-- Part Content -->
+		<article class="part-content">
+			<header>
+				<h2 id="part-II">Part II: Technology Foundations for Big Data</h2><hr>
+				<ul>In Part II ...
+					<li>Explain the various elements of the big data stack</li>
+					<li>Integrate analytics and applications with big data</li>
+					<li>Define virtualization</li>
+					<li>Explain how virtualization impacts big data</li>
+					<li>Add abstraction to the mix</li>
+					<li>Understand the cloud and its role in big data</li>
+				</ul>
+			</header>
+
+			<!-- Chapter 4 -->
+			<article id="chapter-4">
+				<header>
+					<h3>Chapter 4: Digging into Big Data Technology Components</h3>
+					<ul>In Chapter 4 ...
+						<li>Introducing the big data stack</li>
+						<li>Redundant physical infrastructure</li>
+						<li>Security infrastructure</li>
+						<li>Interfaces and feeds to and from applications</li>
+						<li>Operational databases</li>
+						<li>Organizing data services and tools</li>
+						<li>Analytical data warehouses</li>
+						<li>Introduction to big analytics</li>
+						<li>Introduction to big data application</li>
+					</ul>
+				</header>
+
+				<!-- Scenario -->
+				<section class="scenario">
+					<h4>Scenario</h4>
+				</section>
+
+				<!-- Definitions -->
+				<section class="definition">
+					<h4>Definition</h4>
+				</section>
+				<!-- End of Definitions -->
+
+				<!-- Causality Relationship -->
+				<section class="causality-relationship">
+					<h4>Causality Relationship</h4>
+					<p><span class="cause">Problem: </span></p>
+					<p><span class="effect">Solution: </span></p><br />
+				</section>
+				<!-- End of Problems-Solutions -->
+
+				<!-- Architecture -->
+				<section class="architecture">
+					<h4>Architecture</h4>
+					<ul>Big Data Stack
+						<!-- Layer 0: Redundant Physical Infrastructure -->
+						<li>Layer 0: Redundant Physical Infrastructure
+
+							<ul>
+								<li>Performance
+									<p>How responsive do you need the system to be?</p>
+									<p>Refer to latency</p>
+								</li>
+								
+								<li>Availability
+									<p>Do you need a 100% uptime guarantee of service?</p>
+									<p>How long can your business wait in the case of a service interruption of failure?</p>
+								</li>
+								
+								<li>Scalability
+									<p>How bid does your infrastructure need to be?</p>
+									<p>How much disk space is needed today and in the future?</p>
+									<p>How much computing power do you need?</p>
+								</li>
+								
+								<li>Flexibility
+									<p>How quickly can you add more resources to the infrastructure?</p>
+									<p>How quickly can your infrastructure recover from failure</p>
+								</li>
+									
+								<li>Cost
+									<p>What can you afford?</p>
+								</li>
+							</ul>
+
+							<ul>Service level agreements (SLAs) describes specific term for performance, recovery, availability
+								<li>Physical redundant networks
+									<p>Must have enough capacity to accommodate the anticipated volume and velocity of inbound and outbound data</p>
+									<p>Must be elastic</p>
+									<p>Refer to the blood in a body</p>
+								</li>
+								<li>Managing hardware: storage and servers
+									<p>Must have sufficient speed and capacity to handle all expected big data capabilities</p>
+									<p>Storage refers to the memory and Server like nerve system</p>
+								</li>
+								<li>Infrastructure operations
+									<p>Maintain the integrity of data</p>
+									<p>Refer to the brain</p>
+								</li>
+							</ul>
+
+						</li>
+						<!-- End of Layer 0 -->
+
+						<!-- Layer 1: Security Infrastructure -->
+						<li>Layer 1: Security Infrastructure
+
+							<ul>
+								<li>Data access</li>
+								<li>Application access</li>
+								<li>Data encryption</li>
+								<li>Threat detection</li>
+							</ul>
+
+						</li>
+						<!-- End of Layer 1 -->
+
+						<!-- Layer 2: Operational Databased -->
+						<li>Layer 2: Operational Databases
+							<p>At the core of any big data environment</p>
+							<p>Contain the collections of data elements relevant to the business</p>
+							<p>Must be fast, scalable and rock solid</p>
+							<img src="../images/characteristics-of-SQL-and-NoSQL-databases.jpg" alt="Characteristics of SQL and NoSQL Databases" />
+
+							<ul>Relational Databases
+								<li>Using SQL to query</li>
+								<li>ACID behavior
+									<p>Atomicity</p>
+									<p>Consistency</p>
+									<p>Isolation</p>
+									<p>Durability</p>
+								</li>
+							</ul>
+						</li>
+						<!-- End of Layer 2 -->
+
+						<!-- Layer 3: Organizing Data Service and Tools -->
+						<li>Layer 3: Organizing Data Services and Tools
+							<p>Capture, validate, and assemble various big data elements into contextually relevant collections</p>
+							<p>An ecosystem of tools and technologies that can be used to gather and assemble data in preparation for further processing</p>
+							<p>Provide integration, translation, normalization and scale</p>
+						</li>
+						<!-- End of Layer 3 -->
+
+						<!-- Layer 4: Analytical Data Warehouses -->
+						<li>Layer 4: Analytical Data Warehouses
+							<p>Company with data marts to optimize data to help decision makers</p>
+							<p>Contains normalized data gathered from various of sources and assembled to facilitate analysis of the business</p>
+							<p>Symplify creation of reports and the visualization of disparate data items</p>
+							<ul>Classes of tools
+								<li>Reporting and dashboards: user-friendly representation of the information from various sources</li>
+								<li>Visualization: Highly interactive and dynamic in nature using different techniques: mind maps, heat maps, infographics, and connection diagrams</li>
+								<li>Analytics and advanced analytics: process data for human consumption
+									<p>What did happen?</p>
+									<p>Why did it happen?</p>
+									<p>What will happen?</p>
+									<p>How to make it happen?</p>
+								</li>
+							</ul>
+						</li>
+						<!-- End of Layer 4 -->
+
+					</ul>
+				</section>
+				<!-- End of Architecture -->
+
+				<!-- Technology -->
+				<section class="technology">
+					<h4>Technology fundamental</h4>
+					<ul>Intefaces and Feeds to and from Applications and the Internet
+						<li>Representational State Transfer (REST: mechanism for connecting one web resource to another web resource</li>
+						<li>RESTfull API: provides a standardized way to create a temporary relationship (loose coupling) among web resources</li>
+						<li>Natural Language Processing (NLP): moethod for interfacing between big data and your aplication programs</li>
+						<li>Connector factory: additional layer of abstraction and predictability to the process => Service Oriented Architecture (SOA)</li>
+					</ul>
+
+					<ul>Layer 3 technologies
+						<li>Distributed file system: decompose data streams and provide scale and storage capacity</li>
+						<li>Serialization services: persistent data storage and multilanguage remote procedure calls (RPCs)</li>
+						<li>Coordination services: build distributed applications</li>
+						<li>Extract, transform and load (ETL): load and convert structured and unstructured data into Hadoop</li>
+						<li>Workflow services: schedule jobs and provide a structure for synchronizing process elements across layers</li>
+					</ul>
+				</section>
+				<!-- End of Techonology -->
+			</article>
+			<!-- End of Chapter 4 -->
+			
+		</article>
+		<!-- End of Part Content -->
+
 	</main>
 	<!-- End of Main part -->
 
