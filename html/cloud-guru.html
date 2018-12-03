@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cloud Guru</title>
+</head>
+<body>
+
+	<!-- Header part -->
+	<header>
+		<hgroup>
+			<h1 id="Heading">Cloud Guru</h1>
+			<h3 id="Sub-heading">Aws certificated developer associate</h3>
+		</hgroup>
+
+		<nav id="main-nav">
+			<ul>
+				<!-- Part I -->
+				<li>
+					<a href="#part-I">Part I</a>
+					<ul>
+						<li><a href="#chapter-1">Chapter 1</a></li>
+						<li><a href="#chapter-2">Chapter 2</a></li>
+					</ul>
+				<!-- End of Part I -->
+
+				<!-- Part II -->
+				<li>
+					<a href="#part-II">Part II</a>
+					<ul>
+						<li><a href="#chapter-">Chapter </a></li>
+						<li><a href="#chapter-">Chapter </a></li>
+					</ul>
+				<!-- End of Part II -->
+			</ul>
+		</nav>
+	</header>
+	<!-- End of Header part -->
+
+	<!-- Main part -->
+	<main>
+		<!-- Overview -->
+		<article>
+			<header>
+				<h2 id="overview">Overview </h2><hr>
+			</header>
+
+			<ul> AWS Global Infrastructure
+				<li>Compute
+					<ul>
+						<li>EC2: cvirtual machine</li>
+						<li>EC2 Container Service: run and manage docker contain as scale</li>
+						<li>Elastic Beanstalk: for beginner</li>
+						<li>Lambda: code uploaded to cloud, control and execute it</li>
+						<li>Lightsail: VPS - Virtual Private Services</li>
+						<li>Bacth: batch computing</li>
+					</ul>
+				</li>
+				<li>Storage</li>
+				<li>Databases</li>
+				<li>Migration</li>
+				<li>Networking & Content Delivery</li>
+				<li>Develooper Tools</li>
+				<li>Mangement Tools</li>
+				<li>Media Services</li>
+				<li>Machine Learning</li>
+				<li>Analytics</li>
+				<li>Security & Identity & Compliance</li>
+				<li>Mobile Services</li>
+				<li>AR/VR</li>
+				<li>Application Integration</li>
+				<li>Customer Engagement</li>
+				<li>Business Productivity</li>
+				<li>Desktop & App Streaming</li>
+				<li>Internet Of Thing</li>
+				<li>Game Development</li>
+			</ul>
+
+			<ul>Concepts and Components
+				<li>A region is a geographical area, each region consists of 2 or more Availability Zones</li>
+				<li>An Availability Zone (AZ) is simple a Data Center</li>
+				<li>Edge Locations are endpoints for AWS which are used to caching content, that typically consists of CloudFront, Amazon's Content Delivery Network (CDN)</li>
+			</ul>
+		
+		</article>
+		<!-- End of Overview -->
+
+		<!-- Identity Access Management	-->
+		<article>
+			<header>
+				<h2>Identity Access Management - IAM</h2>
+			</header>
+
+			<ul>Definition
+				<li>Allow to manage users and their level of access to the AWS Console</li>
+			</ul>
+
+			<ul>Benefits
+				<li>Centralised control of your AWS account</li>
+				<li>Shared Access to your AWS account</li>
+				<li>Granular Permission</li>
+				<li>Identity Federation (Active Directory, Facebook, Linkein, ...)</li>
+				<li>Multifactor Authentication</li>
+				<li>Provide temporary access for users/devices and services where necessary</li>
+				<li>Allows you to set up your own password rotation policy</li>
+				<li>Integrates with many different AWS services</li>
+				<li>Supports PCI DSS COmpliance</li>
+			</ul>
+
+			<ul>Critical terms
+				<li>Users: end users</li>
+				<li>Groups: a collection of users under one set of permissions</li>
+				<li>Roles: you create roles and can the assign them to AWS resources</li>
+				<li>Policies: a document that defines one or more permissions, on top of above terms</li>
+			</ul>
+
+			<ul>Lab
+				<li>Choose IAM service, IAM is global</li>
+				<li>Dashboard
+					<ul>IAM users sign-in link
+						<li>http://account-name.signin.aws.amazon.com/console</li>
+						<li>Customize to make the link more sense</li>
+					</ul> 
+					<ul>Security Status
+						<li>Delete your root access keys</li>
+						<li>Activate MFA - Multi-Factor Authentication - on your root account
+							<ul>
+								<li>Root level permission is default when sign in to cloud through root account</li>
+								<li>Add another layer of protection</li>
+								<li>Virtual and Hardware MFA devices</li>
+							</ul>
+						</li>
+						<li>Create individual IAM users
+							<ul>
+								<li>Create users</li>
+								<li>Select AWS access type: Programmatic access and AWS Management Console access</li>
+								<li>Set permissions for users: via group, existing user or existing policies directly</li>
+								<li>Create group and select policies to be attached to the group</li>
+								<li>Result: Token = {Access key ID, Secret access key} used to programmatically interact with AWS services, and {User, Password} used to log in to console</li>
+							</ul>
+						</li>
+						<li>Use groups to assign permissions</li>
+						<li>Apply an IAM password policy
+							<ul>
+								<li>Password Policy</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Roles
+					<ul>A secure way to grant permissions to entities that you trust
+						<li>IAM user in another account</li>
+						<li>Application code running on an EC2 instance that needs to perform actions on AWS resources</li>
+						<li>An AWS service that needs to act on resources in your account to provide its features</li>
+						<li>Users from a corporate directory who use identity federation with SAML</li>
+					</ul>
+
+					<ul>Create role
+						<li>Select role type: Choose the service that will use this role and then select use case</li>
+						<li>Attach permission policy</li>
+						<li>Set role name</li>
+					</ul>
+				</li>
+			</ul>
+
+			<ul>Security Token Service (STS)
+				<li>Grant users limited and temporary access to AWS resources</li>
+				<li>There are 3 user sources
+					<ul>
+						<li>Federation (Active Directory)
+							<ul>
+								<li>Uses Security Assertion Markup Language (SAML)</li>
+								<li>Grants temporary access based off the users Active Directory credentials - not need to be a user in IAM</li>
+								<li>Single sign on (SSO) allows users to log in to AWS console without assigning IAM credentials</li>
+							</ul>
+						</li>
+
+						<li>Federation with Mobile Apps
+							<ul>
+								<li>Use Facebook/Amazon/Google or other OpenID provider to log in</li>
+							</ul>
+						</li>
+						
+						<li>Cross Account Access
+							<ul>
+								<li>Let's users from one AWS account access resources in another</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li>Key terms
+					<ul>
+						<li>Federation: combining or joining a list of users in one domain (such as IAM) with a list of users in another domain (such as AD, Facebook)</li>
+						<li>Identity Broker: a service that allows you to take an identity from point A and join it to point B</li>
+						<li>Identity Store: Services like AD, Facebook, ...</li>
+						<li>Identities: a user of service like Facebook, ...</li>
+					</ul>
+				</li>
+
+				<li>Senario
+					<ol>
+						<li>Employee enters their username and password</li>
+						<li>The application calls an Identity Broker, which capture username and password</li>
+						<li>The Identity Broker uses the orginization's LDAP directory to validate the employee's identity</li>
+						<li>The Identity Broker calls the new GetFederationToken function using IAM credentials, that includes an IAM policy and a duration</li>
+						<li>The STS confirms the policy and return 4 values of the app: access key, secret access key, token and duration</li>
+						<li>The Identity Broker returns the temporary security credentials to the reporting app</li>
+						<li>The targeted service (such as data storage app) uses the temporary security credentials to make requests to the service</li>
+						<li>The service uses IAM to verify that the cresentials allow the requested operation on the given instance</li>
+						<li>IAM provides service with the go-ahead to perform the requested operation</li>
+					</ol>
+				</li>
+			</ul>
+
+		</article>
+		<!-- End of Identity Access Management -->
+
+		<!-- Amazon Elastic Compute Cloud -->
+		<article>
+			<header>
+				<h2>Amazon Elastic Compute Cloud - EC2</h2>
+			</header>
+
+			<ul>Definition
+				<li>Web service that provides resizable compute capacity in the cloud</li>
+				<li>Provide the tools to build failure resiliet applications and isolate themselves from common failure scenarios</li>
+			</ul>
+
+			<ul>Options
+				<li>On Demand: pay fixed rate by the hour without commitment</li>
+				<li>Reserved: provides with a capacity reservation and offer significant discount</li>
+				<li>Spot: enable to bid price for instance capacity</li>
+				<li>Dedicated Hosts: physical EC2 server dedicated for your use, not support multi-tenancy or cloud deployments</li>
+			</ul>
+
+			<ul>Instance Types
+				<li>FIGHT DR MC PX</li>
+				<li>F: FPGA</li>
+				<li>I: IOPS</li>
+				<li>G: Graphics</li>
+				<li>H: High disk throughput</li>
+				<li>T: T2 Micro</li>
+				<li>D: Density</li>
+				<li>R: RAM</li>
+				<li>M: main choice for general purpose apps</li>
+				<li>C: Compute</li>
+				<li>P: Graphics (Pics)</li>
+				<li>X: Extreme Memory</li>
+			</ul>
+
+			<ul>EBS
+				<li>Allow to create storage volumes and attach them to EC2 instances</li>
+				<li>EBS volumes are placed in a specific AZ => automatically replicated to protect from the failure of a single component</li>
+				<li>Types
+					<ul>General Purpose SSD (GP2)
+						<li>Ratio of 3 IOPS per GB to 10,000 IOPS</li>
+					</ul>
+					<ul>Provisioned IOPS SSD (IO1)
+						<li>Designed for I/O intensive application such as large relational or NoSQL databases</li>
+						<li>> 10,000 IOPS</li>
+					</ul>
+					<ul>Throughput Optimized HDD (ST1)
+						<li>Big data</li>
+						<li>Data warehouse</li>
+						<li>Log processing</li>
+						<li>Cannot be a boot volume</li>
+					</ul>
+					<ul>Cold HDD (SC1)
+						<li>Lowest cost storage for infrequently accessed workloads</li>
+						<li>File Server</li>
+						<li>Cannot be a boot volume</li>
+					</ul>
+					<ul>Magnetic
+						<li>Lowest cost per GB</li>
+						<li>Bootable</li>
+						<li>Infrequently accessed</li>
+					</ul>
+				</li>
+
+				<li>Upgrade
+					<li>Cannot upgrade standard type</li>
+					<li>Ability to create snapshot that can be used to create volume, image, and copy</li>
+				</li>
+			</ul>
+
+			<ul>Lab
+				<li>Choose EC2</li>
+				<li>Choose an Amazon Machine Image (AMI)</li>
+				<li>Choose an Instance Type</li>
+				<li>Configure Instance Details, One subnet = one AZ</li>
+				<li>Add Storage</li>
+				<li>Add Tags: try to tag everything</li>
+				<li>Configure Security Group: add rules to allow specific traffic to reach your instance</li>
+				<li>Reivew and launch</li>
+				<li>Select an existing key pair or create a new one: public key and private key that allow you to connect to your instance securely</li>
+			</ul>
+
+			<ul>How to use Putty & PuttyKeyGen
+				<li>Download putty.exe and puttygen.exe</li>
+				<li>Run puttygen, load .pem file - key pair of your instance</li>
+				<li>Save private key to .ppk file</li>
+				<li>Run putty
+					<ul>
+						<li>Host Name (or IP address): ec2-user@[public IP of the EC2 instance]</li>
+						<li>Saved session: same content as above</li>
+						<li>Connection>SSH>Auth>Private key file for authentication: select the .ppk file</li>
+						<li>Save and Open</li>
+					</ul>
+				</li>
+
+				<li>Run a basic html to test web server
+					<ul>
+						<li>sudo su: get supervisor user</li>
+						<li>ym update -y: update all</li>
+						<li>yum install httpd -y: install httpd</li>
+						<li>cd /var/www/html: access to folder which stores html file</li>
+						<li>nano index.html: create an index.html file</li>
+						<li>service httpd start: start httpd</li>
+						<li>go to browser and access public ip address of the EC2 instance</li>
+					</ul>
+				</li>
+
+				<li>Security group
+					<ul>
+						<li>Is a Virtual Firewall</li>
+						<li>One instance can have multiple security groups</li>
+						<li>All inbound Traffic is blocked by default</li>
+						<li>All outbound Traffic is allowed by default</li>
+						<li>Changes take effect immediately</li>
+						<li>The relationship between EC2s and Security Groups is M:N</li>
+						<li>Security Groups are stateful</li>
+						<li>Cannot block specific IP address using Security Groups, instead use Network Access Control Lists</li>
+						<li>Ability to specify allow rules, but not deny rules</li>
+					</ul>
+				</li>
+			</ul>
+		</article>
+		<!-- End of EC2 -->
+
+	</main>
+	<!-- End of Main part -->
+
+	<!-- Footer part -->
+	<footer>
+		
+	</footer>
+	<!-- End of Footer part -->
+
+</body>
+</html>

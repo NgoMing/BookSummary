@@ -46,108 +46,66 @@
 				</ul>
 			</header>
 
-			<!-- Part 1-->
-			<article id="part-1.1">
-				<header>
-					<h3>Part 1.1 </h3>
-					<ul>In Part 1.1 ...
-						<li>Java fundamentals</li>
-					</ul>
-				</header>
+			<!-- Java - Fundamentals -->
+			<section class="java-fundamentals">
+				<h4><a href="java.html">Java References</a></h4>
+				<table>Two ways to present collections of object
+					<tr>
+						<th>Data structure</th>
+						<th>Advantage</th>
+						<th>Disadvantge</th>
+					</tr>
+					<tr>
+						<td>array - sequential allocation</td>
+						<td>index provides immediate access to any item</td>
+						<td>need to know size on initialization</td>
+					</tr>
+					<tr>
+						<td>linked list - linked allocation</td>
+						<td>uses space proportional to size</td>
+						<td>need reference to access an item</td>
+					</tr>
+				</table>
 
-				<!-- Definition -->
-				<section class="definition">
-					<h4>Definition</h4>
+				<li>Data abstraction
 					<ul>
-						<li>Algorithms
-							<p>A finited, deterministics, and effective problem-solving methid suitable for implementation as a computer program</p>
-						</li>
-
+						<li>Data type is a set of values and a set of operations on those values</li>
+						<li>An Abstract Data Type is a data type whose representation is hidden from the client</li>
+						<li>When using ADT, we focus on the operations specified in the API and pay no attention to the data representation</li>
+						<li>When implementing ADT, we focus on the data, then implement operations on that data</li>
+						<li>A framework for study of algorithms</li>
 					</ul>
-				</section>
-				<!-- End of Definition -->
+				</li>
+			</section>
+			<!-- End of Java fundamental -->
 
-				<!-- Java - Fundamentals -->
-				<section class="java-fundamentals">
-					<h4><a href="java.html">Java Fundamentals</a></h4>
+			<!-- fundamental ADT -->
+			<section class="ADT">
+				<h4>Fundamental ADTs</h4>
+				<li>Bag
 					<ul>
-						<li>Primitive data types
-							<ul>
-								<li>byte: 8b integers</li>
-								<li>short: 16b integers</li>
-								<li>int: 32b 2's complement</li>
-								<li>long: 64b integers</li>
-								<li>float: 32b real numbers</li>
-								<li>double: 64b real numbers</li>
-								<li>boolean: true or false</li>
-								<li>char: 16b character</li>
+						<li>ADT
+							<ul>Definition
+								<li>A collection where removing items is not supported</li>
+								<li>Provide the ability to collect items and iterate through the collected items</li>
 							</ul>
+							<table>Operations
+								<tr>
+									<th colspan="2">Bag&ltItem&gt implements Iterable&ltItem&gt</th>
+								</tr>
+							</table>
 						</li>
-
-						<li>Statements
-							<ul>
-								<li>Declarations</li>
-								<li>Assignment</li>
-								<li>Conditionals</li>
-								<li>Loops</li>
-								<li>Break and Continue</li>
-								<li>Short notations</li>
-							</ul>
-						</li>
-
-						<li>Arrays
-							<p>Stores a sequence of values that are all of the same type</p>
-						</li>
-
-						<li>Static methods
-							<p>A sequence of statements</p>
-							<p>Stateless function</p>
-							<ul>Properties of method
-								<li>Arguments are passed by value</li>
-								<li>Method names can be overloaded</li>
-								<li>A method has a single return value but may have multiple return statements</li>
-								<li>A method may have side effects</li>
-							</ul>
-							<ul>Recursion
-								<li>Base case: A conditional statement as the first statement in the program that has a return</li>
-								<li>Subproblems and should not call overlap subproblems</li>
-							</ul>
-						</li>
-
-						<li>Strings
-							<p>A sequence of characters</p>
-						</li>
-
-						<li>Input/Output
-							<ul>
-								<li>Command-line arguments</li>
-								<li>Standard input stream</li>
-								<li>Standard output stream</li>
-								<li>Redirection and piping from the commandline</li>
-								<li></li>
-							</ul>
-						</li>
-
-						<li>Data abstraction
-							<ul>
-								<li>Data type is a set of values and a set of operations on those values</li>
-								<li>An Abstract Data Type is a data type whose representation is hidden from the client</li>
-								<li>When using ADT, we focus on the operations specified in the API and pay no attention to the data representation</li>
-								<li>When implementing ADT, we focus on the data, then implement operations on that data</li>
-								<li>A framework for study of algorithms</li>
-							</ul>
-
-						</li>
+						<li>Implementation</li>
 					</ul>
-				</section>
-				<!-- End of Java - Fundamentals -->
+				</li>
 
-				
+				<li>Queue
+				</li>
 
-
-				
-			</article>
-			<!-- End of Part 1 -->
+				<li>Stack
+				</li>
+			</section>
+			<!-- End of fundamental ADT -->
 			
 		</article>
 		<!-- End of Chapter Content -->

@@ -364,7 +364,7 @@
 
 		<!-- ------------------------------------------------------------------------- -->
 
-		<!-- Part Content -->
+		<!-- Part II Content -->
 		<article class="part-content">
 			<header>
 				<h2 id="part-II">Part II: Technology Foundations for Big Data</h2><hr>
@@ -761,13 +761,136 @@
 				</section>
 				<!-- End of Provider -->
 			</article>
-			<!-- End of Chapter -->
-
-			</article>
-			<!-- End of Chapter 5 -->
+			<!-- End of Chapter 6-->
 			
 		</article>
-		<!-- End of Part Content -->
+		<!-- End of Part II Content -->
+
+		<!-- ------------------------------------------------------------------------- -->
+
+		<!-- Part III Content -->
+		<article class="part-content">
+			<header>
+				<h2 id="part-III">Part III: Big Data Management</h2><hr>
+				<ul>In Part III ...
+					<li>Difference databases in the big data world</li>
+					<li>Use MapReduce for data analysis</li>
+					<li>Understand Hadoop</li>
+					<li>Enhance your Hadoop Distributed File System with programming languages and tools</li>
+					<li>Develop applications for big data in analytics</li>
+					<li>Use applicances in big data management</li>
+				</ul>
+			</header>
+
+			<!-- Chapter 7 -->
+			<article id="chapter-7">
+				<header>
+					<h3>Chapter 7: Operational Databases</h3>
+					<ul>In Chapter 7 ...
+						<li>Taking a look at the relational database</li>
+						<li>Examining nonrelational and key-value pair databases</li>
+						<li>Exploring document and columnar databases</li>
+						<li>Getting to know grap and spatial databases</li>
+						<li>Pursuing the polyglot</li>
+					</ul>
+				</header>
+
+				<!-- Database -->
+				<section class="database">
+					<h4>Different types of database</h4>
+					<ul>Relational Database - PostgreSQL
+						<li>Open source relational database</li>
+						<li>Support many features
+							<ul>
+								<li>Capability to directly handle "objects" within the relational schema</li>
+								<li>Foreign keys</li>
+								<li>Triggers</li>
+								<li>COmplex queries</li>
+								<li>Transactional integrity</li>
+								<li>Multiversion concurrency control</li>
+							</ul>
+						</li>
+						<li>Allow to add new capabilities
+							<ul>
+								<li>Data types</li>
+								<li>Operators</li>
+								<li>Functions</li>
+								<li>Indexing methods</li>
+								<li>Procedural languages</li>
+							</ul>
+						</li>
+					</ul>
+
+					<ul>Riak key-value Database
+						<li>Fast and scalable implementation of a key-value database</li>
+						<li>Lightweight - support high volume environment with fast changing data</li>
+						<li>Effective at real-time analysis</li>
+						<li>Use "buckets" as an organization mechanism for collection of keys and values</li>
+						<li>Peer-to-peer - clusters are resilient and high scalable</li>
+						<li>Larger chusters -> better and faster</li>
+						<li>Protocol between nodes: Gossip</li>
+						<li>Features: Parallel processing, Links and link walking, Search, and Secondary Indexes</li>
+						<li>Applications for
+							<ul>
+								<li>User data for social networks, communities, or gaming</li>
+								<li>High-volume, media-rich data gathering and storage</li>
+								<li>Caching layers for connecting RDBMS and NoSQL databases</li>
+								<li>Mobile applications requiring flexibility and dependability</li>
+							</ul>
+						</li>
+					</ul>
+
+					<ul>MongoDB Document Database
+						<li>Composed of databases containing "collection", that is composed of "documents", that is composed of fields</li>
+						<li>Collection is indexable</li>
+						<li>Return "cursor" - a pointer to the data, offer the option of counting or classifying the data without extracting it</li>
+						<li>Features: High-availability and replication, grid-based file system, MapReduce, sharding service and shard key, support ad hoc queries, distributed queries and full-text search</li>
+						<li>Applications for
+							<ul>
+								<li>High-volume content management</li>
+								<li>Social networking</li>
+								<li>Archiving</li>
+								<li>Reak-time analytics</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<!-- End of Database -->
+
+				<!-- Technology -->
+				<section class="technology">
+					<h4>Technology</h4>
+					<ul>Non-relational database
+						<li>Scalability: capability to write data across multiple data stores simultaneously without regard to physical limitations of the underlying infrastructure</li>
+						<li>Data and Query model: framework to store data and set of query APIs to intelligently access the data</li>
+						<li>Persistence design: difference mechanism used - "in-memory"</li>
+						<li>Interface diversity: RESTful APIs, analysis tools and reporting/visualization</li>
+						<li>Eventual consistency: BASE (Basically Available, Soft state, and Eventual Consistency)</li>
+					</ul>
+
+					<ul>Key-value pair Databases
+						<li>Schema-free</li>
+						<li>Offer great flexibility and scalability</li>
+						<li>Not offer ACID capability</li>
+						<li>Require implementers take care data placement, replication, and fault tolerance</li>
+						<li>Most of data is stored as string</li>
+					</ul>
+
+					<ul>Document Databases
+						<li>Two types: a repository for full document-style content (word files, complete web pages) and a database for storing document components for permanent storage as a static entity or dynamic assembly of the parts of a document</li>
+						<li>The structure of the documents: JSON or BSON</li>
+						<li>Suitable for producing reports which are dynamically assembled from elements that change frequently</li>
+						<li></li>
+					</ul>
+				</section>
+				<!-- End of Technology -->
+
+				
+			</article>
+			<!-- End of Chapter -->
+			
+		</article>
+		<!-- End of Part III Content -->
 
 	</main>
 	<!-- End of Main part -->
